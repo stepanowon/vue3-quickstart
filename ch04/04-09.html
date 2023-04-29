@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-09</title>
+  </head>
+  <body>
+    <div id="app">
+      x : <input type="text" v-model.number="values.x" /><br />
+      y : <input type="text" v-model.number="values.y" /><br />
+      덧셈 결과 : {{sum}}
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { values: { x: 0, y: 0 }, sum: 0 };
+        },
+        watch: {
+          values(current) {
+            var result = Number(current.x) + Number(current.y);
+            if (isNaN(result)) this.sum = 0;
+            else this.sum = result;
+          },
+          // values: {
+          //   handler: function (current) {
+          //     var result = Number(current.x) + Number(current.y);
+          //     if (isNaN(result)) this.sum = 0;
+          //     else this.sum = result;
+          //   },
+          //   deep: true,
+          // },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

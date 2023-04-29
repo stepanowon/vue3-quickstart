@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-03</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row py-2">
+        <div class="col-8 border bg-primary">col-8</div>
+        <div class="col-4 border bg-primary">col-4</div>
+      </div>
+      <!-- md 크기이상 일때 => 균등분할(3:3:3:3) -->
+      <!-- sm 크기이상 일때 => col-sm-6이므로 6:6의 두줄로 표현-->
+      <!-- xs 크기는 정의되지 않았으므로 한줄에 col 하나씩 표현 -->
+      <div class="row py-2">
+        <div class="col-md col-sm-6 border bg-light">col</div>
+        <div class="col-md col-sm-6 border bg-light">col</div>
+        <div class="col-md col-sm-6 border bg-light">col</div>
+        <div class="col-md col-sm-6 border bg-light">col</div>
+      </div>
+
+      <div class="row py-1">
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼1</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼2</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼3</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼4</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼5</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼6</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼7</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼8</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼9</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼10</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼11</p></div>
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 border">칼럼12</p></div>
+      </div>
+    </div>
+  </body>
+</html>

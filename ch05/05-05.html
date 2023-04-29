@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>05-05</title>
+  </head>
+  <body>
+    <div id="app">
+      <div @contextmenu="ctxStop" style="position: absolute; top: 5px; right: 5px; bottom: 5px; left: 5px">
+        <a href="https://facebook.com" @click="confirmFB">페이스북</a>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        methods: {
+          ctxStop(e) {
+            e.preventDefault();
+          },
+          confirmFB(e) {
+            if (!confirm("페이스북으로 이동할까요?")) {
+              e.preventDefault();
+            }
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

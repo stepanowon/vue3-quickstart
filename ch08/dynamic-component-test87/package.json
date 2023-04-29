@@ -1,0 +1,21 @@
+{
+  "name": "dynamic-component-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "p-min-delay": "^4.0.1",
+    "vite-plugin-webpackchunkname": "^0.2.0",
+    "vue": "^3.2.45",
+    "vue-csspin": "^0.1.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.x.x",
+    "vite": "^3.x.x"
+  }
+}

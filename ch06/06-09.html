@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>06-06</title>
+    <style>
+      .bColor {
+        background-color: aqua;
+        color: black;
+      }
+      .bLayout {
+        text-align: center;
+        width: 120px;
+      }
+      .bBorder {
+        border: khaki dashed 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button :class="myStyle">버튼1</button>
+      <p>
+        <input type="checkbox" v-model="myStyle.bColor" value="true" />색상<br />
+        <input type="checkbox" v-model="myStyle.bLayout" value="true" />정렬,크기<br />
+        <input type="checkbox" v-model="myStyle.bBorder" value="true" />테두리선<br />
+      </p>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            myStyle: { bColor: false, bLayout: false, bBorder: false },
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+[
+    { 
+        "id":1, "name":"장영규", "role": "베이스", 
+        "photo":"http://sstatic.naver.net/people/90/200810291643098681.jpg", 
+        "desc":"음악감독,베이스연주가,가수", 
+        "insta" : "", 
+        "facebook":"",
+        "youtube":""
+    },
+    { 
+        "id":2, "name":"이철희", "role": "드럼", 
+        "photo":"http://sstatic.naver.net/people/25/202004271203269741.jpg",
+        "desc":"드럼연주가", 
+        "insta" : "https://www.instagram.com/chulheedrum/", 
+        "facebook":"",
+        "youtube":"https://www.youtube.com/channel/UCt4_srP6q_aPsmuZ3W3R-Uw" 
+    },
+    { 
+        "id":3, "name":"정중엽", "role": "베이스", 
+        "photo":"http://sstatic.naver.net/people/4/201810191210281131.jpg",
+        "desc":"베이스연주가,가수", 
+        "insta" : "https://www.instagram.com/jeong_jung_yeop/", 
+        "facebook":"https://www.facebook.com/jungyeop.jeong",
+        "youtube":"" 
+    },
+    { 
+        "id":4, "name":"안이호", "role": "보컬", 
+        "photo":"http://sstatic.naver.net/people/28/202006251702278941.png",
+        "desc":"국악인", 
+        "insta" : "", 
+        "facebook":"",
+        "youtube":"" 
+    },
+    { 
+        "id":5, "name":"권송희", "role": "보컬", 
+        "photo":"http://sstatic.naver.net/people/46/201510231035104681.jpg",
+        "desc":"국악인", 
+        "insta" : "", 
+        "facebook":"https://www.facebook.com/aall44",
+        "youtube":"https://www.youtube.com/user/Pansorisonghee" 
+    },
+    { 
+        "id":6, "name":"이나래", "role": "보컬", 
+        "photo":"http://sstatic.naver.net/people/6/201703031858021301.jpg",
+        "desc":"국악인", 
+        "insta" : "", 
+        "facebook":"https://www.facebook.com/kts.lee.narae",
+        "youtube":"https://www.youtube.com/user/WingNalAe" 
+    },
+    { 
+        "id":7, "name":"신유진", "role": "보컬", 
+        "photo":"http://sstatic.naver.net/people/187/202003101752345151.jpg", 
+        "desc":"국악인", 
+        "insta" : "https://www.instagram.com/grathia_zini/", 
+        "facebook":"https://www.facebook.com/yujin2021",
+        "youtube":"" 
+    }
+]

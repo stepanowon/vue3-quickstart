@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05-14</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li>마우스 왼쪽만 클릭 : 1씩 증가</li>
+        <li>CTRL+왼쪽 클릭 : 10씩 증가</li>
+        <li>CTRL+ALT+왼쪽 클릭 : 100씩 증가</li>
+      </ul>
+      <button @click.exact="num=num+1" @click.ctrl.exact="num=num+10" @click.ctrl.alt.exact="num=num+100">
+        클릭하세요</button
+      ><br />
+      <br />
+      <h3>카운트 : {{num}}</h3>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { num: 0 };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

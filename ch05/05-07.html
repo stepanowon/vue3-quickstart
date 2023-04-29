@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>05-07</title>
+    <style>
+      #outer {
+        width: 200px;
+        height: 200px;
+        border: solid 2px black;
+        background-color: aqua;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        padding: 10px 10px 10px 10px;
+      }
+      #inner {
+        width: 100px;
+        height: 100px;
+        border: solid 2px black;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="outer" @click="outerClick">
+        <div id="inner" @click="innerClick"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        methods: {
+          outerClick(e) {
+            console.log("### OUTER CLICK");
+            console.log("Event Phase : ", e.eventPhase);
+            console.log("Current Target : ", e.currentTarget);
+            console.log("Target : ", e.target);
+          },
+          innerClick(e) {
+            console.log("### INNER CLICK");
+            console.log("Event Phase : ", e.eventPhase);
+            console.log("Current Target : ", e.currentTarget);
+            console.log("Target : ", e.target);
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

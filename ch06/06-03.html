@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>06-03</title>
+  </head>
+  <body>
+    <div id="app">
+      <button id="a" :style="{ backgroundColor:bgColor, color }" @mouseover.stop="overEvent" @mouseout.stop="outEvent">
+        테스트
+      </button>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { bgColor: "aqua", color: "black" };
+        },
+        methods: {
+          overEvent() {
+            this.bgColor = "purple";
+            this.color = "yellow";
+          },
+          outEvent() {
+            this.bgColor = "aqua";
+            this.color = "black";
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

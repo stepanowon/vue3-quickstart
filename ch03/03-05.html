@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-05</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <h2>취미생활</h2>
+        <input type="checkbox" id="hobbyA" value="A" v-model="hobby" />
+        <label for="hobbyA">운동</label><br />
+        <input type="checkbox" id="hobbyB" value="B" v-model="hobby" />
+        <label for="hobbyB">독서</label><br />
+        <input type="checkbox" id="hobbyC" value="C" v-model="hobby" />
+        <label for="hobbyB">음악</label><br />
+        <input type="checkbox" id="hobbyD" value="D" v-model="hobby" />
+        <label for="hobbyB">댄스</label><br />
+        <input type="checkbox" id="hobbyE" value="E" v-model="hobby" />
+        <label for="hobbyB">역사</label><br />
+      </div>
+      <div>
+        <h2>상품 분류 선택</h2>
+        <select v-model="category">
+          <option value="">----상품 분류를 선택하세요----</option>
+          <option value="C01">레저</option>
+          <option value="C02">가전</option>
+          <option value="C03">음식</option>
+          <option value="C04">도서</option>
+          <option value="C05">주방</option>
+        </select>
+      </div>
+      <hr />
+      <div>
+        선택한 취미 : {{hobby.join(',')}} <br />
+        선택한 상품 분류 : {{category}}
+      </div>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            hobby: [],
+            category: "",
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

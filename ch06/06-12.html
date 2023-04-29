@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>06-12</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20pt;
+      }
+      .todo-done {
+        text-decoration: line-through;
+      }
+      .container {
+        padding: 10px 10px 10px 10px;
+      }
+      .panel-borderless {
+        border: 0;
+        box-shadow: none;
+      }
+      .pointer {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div class="card card-body bg-light">
+        <div classe="title">:: Todolist App</div>
+      </div>
+      <div class="card card-default card-borderless">
+        <div class="card-body">
+          <div class="row mb-3">
+            <div class="col">
+              <div class="input-group">
+                <input id="msg" type="text" class="form-control" name="msg" placeholder="할일을 여기에 입력!" />
+                <span class="btn btn-primary input-group-addon">추가</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-success">
+                  <span class="todo-done pointer">할일1 (완료)</span>
+                  <span class="float-end badge bg-secondary pointer">삭제</span>
+                </li>
+                <li class="list-group-item">
+                  <span class="pointer">할일2</span>
+                  <span class="float-end badge bg-secondary pointer">삭제</span>
+                </li>
+                <li class="list-group-item">
+                  <span class="pointer">할일2 </span>
+                  <span class="float-end badge bg-secondary pointer">삭제</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>

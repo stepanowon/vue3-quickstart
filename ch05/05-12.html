@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05-12</title>
+  </head>
+  <body>
+    <div id="app">
+      이름 :
+      <input type="text" v-model.trim="name" @keyup.enter="search" placeholder="영문 두글자 이상을 입력하세요" /><br />
+      <ul>
+        <li v-for="c in contacts">{{c.name}} : {{c.tel}}</li>
+      </ul>
+      <div v-show="isLoading">검색중</div>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios"></script>
+    <script type="text/javascript" src="https://unpkg.com/lodash"></script>
+    <script type="text/javascript">
+      const BASEURL = "https://contactsvc.bmaster.kro.kr";
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { name: "", contacts: [], isLoading: false };
+        },
+        methods: {
+          search(e) {
+            console.log(e);
+            // if (e.keyCode === 13) {
+            if (this.name.length >= 2) {
+              this.fetchContacts();
+            } else {
+              this.contacts = [];
+            }
+            // }
+          },
+          fetchContacts() {
+            this.isLoading = true;
+            axios.get(BASEURL + `/contacts_long/search/${this.name}`).then((response) => {
+              this.isLoading = false;
+              this.contacts = response.data;
+            });
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

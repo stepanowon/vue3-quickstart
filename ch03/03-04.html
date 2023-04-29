@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-04</title>
+  </head>
+  <body>
+    <div id="app">
+      <input id="a" type="text" v-model="name" />
+      <br />
+      입력하신 이름 : <span>{{name}}</span>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { name: "" };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
