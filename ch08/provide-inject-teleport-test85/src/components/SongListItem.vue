@@ -4,7 +4,7 @@
     </li>
 </template>
 
-<script>``
+<script>
     export default {
         name: "SongListItem",
         inject: ["icons"],
