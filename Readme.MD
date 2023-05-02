@@ -2,11 +2,11 @@
 
 ### 원쌤의 Vue3 퀵스타트 
 
-<img src="cover_vue3_quickstart.png" data-canonical-src="cover_vue2_quickstart.png" width="600" />
+<img src="vue-cover.jpg" data-canonical-src="vue-cover.jpg" width="600" />
 
 ---
 
-- ch01 : Ve.js 소개
+- ch01 : Vue.js 소개
 - ch02 : Vue.js를 위한 ES6
 - ch03 : Vue.js기초와 Template
 - ch04 : Vue 인스턴스
