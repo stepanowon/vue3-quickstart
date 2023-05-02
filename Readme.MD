@@ -2,7 +2,7 @@
 
 ### 원쌤의 Vue3 퀵스타트 
 
-<img src="https://github.com/stepanowon/vue3-quickstart/blob/main/vue_cover.jpg" data-canonical-src="vue-cover.jpg" width="400" />
+<img src="https://github.com/stepanowon/vue3-quickstart/blob/main/vue_cover.png" data-canonical-src="vue_cover.png" width="400" />
 
 ---
 
