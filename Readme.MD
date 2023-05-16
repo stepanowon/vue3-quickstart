@@ -38,7 +38,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "vue": "3.2.47"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.3",
