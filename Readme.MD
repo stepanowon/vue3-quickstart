@@ -28,7 +28,7 @@
   * stackoverflow 아티클 : https://stackoverflow.com/questions/76243411/vue-3-3-2-not-showing-warnings-on-console
 - 경고 메시지가 나타나지 않는다면 Vue 버전을 다운그레이드하여 실행하십시오.
 - vue 버전 다운그레이드 방법
-  * package.json의 vue 버전을 다음과 같이 변경합니다. 버전 앞의 ^를 제거하여 정확한 버전을 다운로드합니다.
+  * package.json의 vue 버전을 다음과 같이 변경합니다. (버전 앞의 ^를 제거하여 정확한 버전을 지정합니다)
    ~~~
    {
      ......
