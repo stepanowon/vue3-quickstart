@@ -29,21 +29,11 @@
 * package.json의 vue 버전을 다음과 같이 변경합니다.
 ~~~
 {
-  "name": "test-vue-app",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  ......
   "dependencies": {
-    <b>"vue": "3.2.47"</b>
+    **"vue": "3.2.47"**
   },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.3.5"
-  }
+  ......
 }
 ~~~
 * package-lock.json을 삭제합니다.
