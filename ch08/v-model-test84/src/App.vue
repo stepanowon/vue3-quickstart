@@ -1,6 +1,6 @@
 <template>
   <div>
-    <InputName v-model:name="searchName" />
+    <InputName :value="name" @input="$emit('update:name', $event.target.value)" />
     <h3> 검색어 : {{searchName}}</h3> 
   </div>
 </template>

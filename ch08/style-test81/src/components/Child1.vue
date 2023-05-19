@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .child { background-color: yellow; border:solid 1px black; margin:1.5em; padding: 1.0em;  }
 </style>
