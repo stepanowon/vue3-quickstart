@@ -74,7 +74,7 @@ export default {
 <style scoped>
 .modal { display: block; position: fixed; z-index: 1; 
     left: 0; top: 0; width: 100%; height: 100%;
-    overflow: auto; background-color: rgb(0,0,0); 
+    overflow: auto; 
     background-color: rgba(0,0,0,0.4); }
 .box { background-color: white; margin:80px auto;
     max-width: 500px; min-width: 100px; min-height: 350px;
